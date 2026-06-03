@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: rgb(1, 1, 73);
+    height: 3em;
+    align-items: center;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 255);
+
+}
+.header svg{
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.todo-container .items{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: center;
+    padding: 1.3rem;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.253);
+    background: linear-gradient(to top, rgba(223, 223, 245, 0.329), white);
+    background-repeat: no-repeat;
+    gap: 5px;
+    margin: 0px;
+} 
+p #filter{
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.items h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    fill-opacity: 100%;
+    text-transform: capitalize;
+    
+    
+}
+.items details{
+    width: 100%;
+    font-weight: bold;
+    text-align: justify;
+    gap: 3rem;
+    color: rgb(19, 18, 18);
+    background-color: rgba(1, 41, 41, 0.185);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.items details data{
+  word-spacing: 1px; 
+  opacity: 100%; 
+}
+#remainder{
+    color: rgb(141, 4, 4);
+ animation-name: textanimate;
+ transition: 1s ease-in-out;
+ animation-duration: 4s;
+ animation-timing-function: ease-in;
+ animation-iteration-count: infinite;
+ animation-fill-mode:both;
+ animation-play-state: running;
+ 
+}
+
+.items .active-buttons{
+    width: 100%;
+    padding-left:1.5rem;
+}
+
+.items .active-buttons .delete-Button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pagination #next{
+ display: flex;
+ flex-direction: column-reverse;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+}
+
+.pagination #prev{
+ display: flex;
+ flex-direction: column-reverse;
+ background-color: transparent;
+ border: none;  
+ cursor: pointer;
+}
+
+@keyframes textanimate{
+    0%{
+        opacity: 40%;
+        color:rgb(185, 11, 11);
+        transition: 0.2s;
+    }
+    50%{
+        opacity: 90%;
+        color: rgb(141, 4, 4);
+    }
+    70%{
+        opacity: 20%;
+    }
+    100%{
+     transition: 1s ease-out;
+     opacity: 100%;
+    }
+}
+
+
+.pagination{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0%;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    padding-top: 20px;
+    margin-bottom: auto;
+    z-index: -1;
+}
+.items dialog{
+    border: none;
+    align-self: center;
+    justify-self:center;
+    font-size: medium;
+    padding: 2rem;
+    padding: 20px;
+}
+dialog .buttontab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30%;
+    margin-top: 3.3rem;
+}
+dialog #accept{
+ background-color: rgba(255, 0, 0, 0.753);
+ width: 70px;
+ border: none;
+ padding: 0.6rem;
+ border-radius: 3px;
+ font-weight: bold;
+ color: white;
+ cursor: pointer;
+}
+dialog #cancle{
+    background-color: rgb(248, 247, 253);
+    border: none;
+    border-radius: 3px;
+    width: 70px;
+    padding: 0.6rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+@media (min-width:700px){
+   .header nav{
+        width:10%;
+        top: 5rem;
+        padding-left: 10px;
+
+    }
+    nav li{
+        font-size: large;
+    }
+  
+    
+
+}
+
+nav li{
+    padding-top:1rem ;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.header #close-nav{
+    display:none;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+nav ul a{
+    width: 100%;
+    color: rgb(249, 252, 252);
+    text-decoration: none;
+
+}
+
+#nav-elem li:nth-child(1):hover{
+ background-color: rgb(236, 235, 245);
+ color: black;
+}
+#nav-elem li:nth-child(2):hover{
+  background-color: rgb(236, 235, 245);
+ color: black;
+}
+#nav-elem #timer:hover{
+ background-color: rgb(236, 235, 245);
+ color: black;
+}
+#nav-elem #settings:hover{
+ transition: 0.2s;
+ background-color: rgb(236, 235, 245);
+ color: black;
+}
+
+.header nav{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-self: start;
+    background-color: rgba(2, 2, 22, 0.747);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 4.6rem;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: rgb(252, 253, 253);
+    font-size: large;
+    font-weight: bold;
+    padding-top: 4rem;
+    display:none;
+    transition: 0.3s ease-in;
+    transition-property: all;
+    border-radius: 8px;
+    z-index: 4;
+}
+.Empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+    color: rgb(76, 76, 78);
+}
+.Empty a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: large;
+}
+
+.Empty a:active{
+    color: rgb(46, 45, 45);
+    transition: 0.2s ease-out;
+}
+@media (max-width:600px) {
+    .todo-container .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0.5rem;
+        gap: 3px;
+        font-size: larger;
+    }
+    .items h2{
+        font-size: larger;
+        padding: 10px;
+    }
+    .items details data{
+        font-size: medium;
+    }
+    .items .active-buttons{
+    display:flex;
+    width: 100%;
+    padding-left:0rem;
+    gap:10px;
+    padding: 10px;
+}
+.pagination{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    
+}
+
+dialog button{
+   gap: 19px;
+   margin: 5px;
+}
+}

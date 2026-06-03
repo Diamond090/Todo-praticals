@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'poppins' ,sans-serif;
+
+}
+
+body{
+    background:linear-gradient(rgb(190, 255, 190), white) ;
+    background-repeat: no-repeat;
+
+}
+.header-con{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.header-con h3{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight:900;
+  font-size: xx-large;
+  padding-top: 1px;
+  padding-right: 40px;
+  color: rgb(17, 110, 17);
+  -webkit-text-stroke: 1px rgb(225, 250, 229);
+  
+}
+.timer-container{
+    width: 100%;
+    height: 40vh;
+    margin-top: 1.5rem;
+}
+.timer-container h2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.buttons{
+    width: 80%;
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: end;
+    position: fixed;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    background-color: rgba(201, 255, 255, 0.39);
+    height: 50px;
+    backdrop-filter: blur(10px);
+    border-radius:2rem ;
+    padding-right: 10px;
+
+}
+.buttons #new-timer{
+    width: 4.3rem;
+    height: 90%;
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: medium;
+    color: rgb(16, 17, 16);
+    padding: 4px;
+    cursor: pointer;
+
+}
+
+.buttons #play-pause{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    height: 75%;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(62, 62, 219);
+    padding-right:10px ;
+    cursor: pointer;
+}
+
+.buttons #alarm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding: 7px;
+    border: none;
+    background-color:transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.buttons #new-timer:hover{
+    background-color: rgba(153, 153, 248, 0.37);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in;
+    width: 5rem;
+}
+.buttons #alarm:hover{
+width: 5rem;
+background-color: rgba(153, 153, 248, 0.37);
+backdrop-filter: blur(10px);
+transition: 0.3s ease-in;
+
+}
+.buttons #play-pause:hover{
+width: 5rem;
+background-color: rgba(11, 11, 134, 0.863);
+backdrop-filter: blur(10px);
+transition: 0.3s ease-in;
+
+}
+@media(max-width:380px){
+.buttons{
+  gap: 20px;
+  width:100%;
+}
+.buttons #new-timer{
+    width: 5rem;
+    font-size: medium;
+    padding: 7px;
+}
+.buttons #alarm{
+    padding: 7px;
+}
+.timer-container h2{
+    font-size: 2.3rem;
+}
+.header-con h3{
+    padding: 0;
+    font-size: 1.5rem;
+}
+}
+
+dialog{
+    display: relative;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(240, 248, 255, 0.349);
+    backdrop-filter: blur(10px);
+}
+dialog .container{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 6rem;
+    justify-content: center;
+    align-items: center;
+
+}
+dialog .container div{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+dialog .container div input{
+ border: 0;
+ outline: 0;
+ height: 100%;
+ width: 100%;
+ text-align: center;
+ font-weight: bolder;
+ font-size: 2.2rem;
+ padding: 0;
+ 
+}
+dialog .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    
+}
+dialog .button #cancle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    width: 55px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+dialog .button #add{
+   position: absolute;
+   bottom: 0;
+   padding: 8px;
+   margin-left: px;
+   font-size:medium;
+   font-weight: bold;
+   background-color: green;
+   color: white;
+   border: solid rgba(213, 213, 235, 0.295);
+   border-radius: 1rem;
+   cursor: pointer;
+}
+
+dialog .button #add:hover{
+    border-width: 1px;
+    transition: 0.3s ease-out;
+}
