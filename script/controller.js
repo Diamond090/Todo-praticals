@@ -7,7 +7,7 @@ import { TodoView } from "./view.js";
         this.view=new TodoView();
 
         this.currentPage= 1;
-        this.itemsPerPage= 6;
+        this.itemsPerPage= 7;
         this.totalPage=this.model.todoArray.length;
         this.maxPage=Math.ceil(this.totalPage/this.itemsPerPage);
 
@@ -20,10 +20,10 @@ import { TodoView } from "./view.js";
 
       }
       viewFunc(container){
-        if (this.model.todoArray.length===0){
-          return container.innerHTML=this.view.emptystring()
-        }
-        else{
+       if (this.model.todoArray.length===0){
+        return container.innerHTML=this.view.emptystring()
+       }
+       else{
        return container.innerHTML= this.view.viewtodo(this.paginationArray());
       }}
       
@@ -68,13 +68,7 @@ import { TodoView } from "./view.js";
       dateRemainderFunc(eventDate){
         return this.model.DateRemainder(eventDate);
 
-        };
-
-      categoryFunc(container){
-        this.model.categories(category,(category)=>{
-        return container.innerHTML= this.view.viewtodo(category);
-        })
-      }
+        }
 
       }
 

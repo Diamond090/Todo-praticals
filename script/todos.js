@@ -1,6 +1,6 @@
-import { TodoController } from "../controller.js";
-import { TodoModel } from "../model.js";
-import { TodoView } from "../view.js";
+import { TodoController } from "./controller.js";
+import { TodoModel } from "./model.js";
+import { TodoView } from "./view.js";
 
  export class DisplayTodo{
        htmlContainer=document.querySelector('.todo-container');

@@ -98,7 +98,7 @@ p #filter{
 .pagination #next{
  display: flex;
  flex-direction: column-reverse;
- background-color: transparent;
+ background-color:transparent;
  border: none;
  cursor: pointer;
 }
@@ -143,7 +143,7 @@ p #filter{
     gap: 2rem;
     padding-top: 20px;
     margin-bottom: auto;
-    z-index: -1;
+    z-index: 2;
 }
 .items dialog{
     border: none;
