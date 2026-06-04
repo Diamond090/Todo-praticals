@@ -57,24 +57,26 @@
     justify-content: end;
     align-items: center;
     padding-right: 1rem;
-    padding: 1rem;
+    padding: 1.2rem;
     width: 100%;
     background-color: white;
 
 }
+
+
 #date{
-
+     opacity: 0; 
+     position: absolute;
+     height: 0;
+     width: 0;
     border: none;
-    font-size:xx-large;
-    color: black;
-    padding-right: 5px;
-    background-color: transparent;
-    width: 2.5rem;
-    cursor: pointer;
-
-
+    outline-color: transparent;
 }
-
+#date-picker{
+    cursor: pointer;
+    width: 5rem;
+    height: 33px;
+}
 #addTodo{
     display: flex;
     justify-content: center;
