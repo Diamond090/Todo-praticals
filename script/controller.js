@@ -7,7 +7,7 @@ import { TodoView } from "./view.js";
         this.view=new TodoView();
 
         this.currentPage= 1;
-        this.itemsPerPage= 7;
+        this.itemsPerPage= 6;
         this.totalPage=this.model.todoArray.length;
         this.maxPage=Math.ceil(this.totalPage/this.itemsPerPage);
 
