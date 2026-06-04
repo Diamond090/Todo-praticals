@@ -277,6 +277,7 @@ nav ul a{
     font-weight: bold;
     padding: 10px;
     font-size: large;
+    color: rgb(6, 6, 126);
 }
 
 .Empty a:active{
