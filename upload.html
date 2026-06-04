@@ -9,7 +9,7 @@
 <body>
 <div class="container"> 
    <div class="header">
-        <div class="prevtab"><a href="javascript:history.back()"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="35px" fill="rgba(45, 46, 46, 0.842)"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></a></div>
+        <div class="prevtab"><a href="index.html" onclick="window.location.reload()"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="35px" fill="rgba(45, 46, 46, 0.842)"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></a></div>
        <h2>Add Todo</h2>
     </div>
 
@@ -25,8 +25,9 @@
             <option value="study">Study</option>
             <option value="other">Other</option>
           </select>
+          <label for="date"><svg xmlns="http://www.w3.org/2000/svg" id="date-picker" height="33px" viewBox="0 -960 960 960" width="57px" fill="#173660"><path d="M680-80v-120H560v-80h120v-120h80v120h120v80H760v120h-80Zm-480-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z"/></svg></label>
+          <input type="date" alt="date" name="date" id="date" hidden >
 
-          <input type="date" alt="date" name="date" id="date" >
 
 
            <button id="addTodo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000F5"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>Add</button>

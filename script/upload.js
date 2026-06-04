@@ -30,6 +30,13 @@ class Upload{
    this.eventElem.value='';
       })
    }
+
+   dateFunc(){
+      document.getElementById('date-picker').addEventListener('click',()=>{
+         console.log('clicked')
+         document.getElementById('date').showPicker();
+      })
+   }
 }
  const runItem=new Upload()
- runItem.runCategories();
+ runItem.dateFunc();
