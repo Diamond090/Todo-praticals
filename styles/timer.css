@@ -56,9 +56,9 @@ body{
     position: absolute;
     bottom: 0;
     margin-bottom: 60px;
-    background-color: rgba(201, 255, 255, 0.39);
+    background-color: rgba(209, 243, 243, 0.39);
     height: 50px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border-radius:2rem ;
     padding-right: 10px;
 
@@ -75,7 +75,7 @@ body{
     font-weight: bolder;
     font-size: medium;
     color: rgb(16, 17, 16);
-    padding: 4px;
+    padding-left: 4px;
     cursor: pointer;
 
 }
@@ -88,8 +88,7 @@ body{
     height: 75%;
     border-radius: 2rem;
     border: none;
-    background-color: rgb(62, 62, 219);
-    padding-right:10px ;
+    background-color: rgb(107, 107, 245);
     cursor: pointer;
 }
 
@@ -98,27 +97,28 @@ body{
     align-items: center;
     justify-content: center;
     height: 90%;
-    padding: 7px;
+    padding: 5px;
     border: none;
     background-color:transparent;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
+    width: 4.3rem;
     cursor: pointer;
 }
 .buttons #new-timer:hover{
     background-color: rgba(153, 153, 248, 0.37);
     backdrop-filter: blur(10px);
     transition: 0.3s ease-in;
-    width: 5rem;
+    width: 4.3rem;
 }
 .buttons #alarm:hover{
-width: 5rem;
+width: 4rem;
 background-color: rgba(153, 153, 248, 0.37);
 backdrop-filter: blur(10px);
 transition: 0.3s ease-in;
 
 }
 .buttons #play-pause:hover{
-width: 5rem;
+width: 4rem;
 background-color: rgba(11, 11, 134, 0.863);
 backdrop-filter: blur(10px);
 transition: 0.3s ease-in;
@@ -127,15 +127,15 @@ transition: 0.3s ease-in;
 @media(max-width:380px){
 .buttons{
   gap: 20px;
-  width:100%;
+  width:98%;
 }
 .buttons #new-timer{
     width: 5rem;
     font-size: medium;
-    padding: 7px;
+    padding: 5px;
 }
 .buttons #alarm{
-    padding: 7px;
+    padding: 5px;
 }
 .timer-container h2{
     font-size: 2.3rem;

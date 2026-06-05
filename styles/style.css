@@ -17,12 +17,18 @@
     height: 12vh;
     display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: space-between;
     background-color: rgba(169, 196, 255, 0.829);
     margin-bottom: 10px;
 }
-.header .prevtab{
-    padding-left: 5px;
+.header .lists{
+    padding-left: 15px;
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    padding-top: 5px;
+    gap: 0;
 
 }
 .header h2{
@@ -30,8 +36,27 @@
     display: flex;
     justify-content: center;
     font-size: x-large;
-    padding: 2px;
+    padding: 10px;
     color:rgb(1, 4, 27);
+}
+
+.lists #tracker{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    background-color:red;
+    width: 16px;
+    height: 15px;
+    padding: 7px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: smaller;
+    font-weight: bold;
+    color: rgb(247, 246, 246);
+    
+
 }
 
 
@@ -40,13 +65,14 @@
 .add-section #todo-name{
 
     width: 100%;
-    font: 1em sans-serif;
+    font: 2em sans-serif;
     height: 22vh;
     padding: 10px;
     border: none;
     outline-color:transparent;
     text-align: end;
-    font-size: medium;
+    font-size: large;
+    font-weight: 700;
 }
 .add-section #todo-name::placeholder{
     text-align: end;
@@ -78,9 +104,10 @@
 }
 #date-picker{
     cursor: pointer;
-    width: 5rem;
+    width: 4rem;
     height: 33px;
 }
+
 #addTodo{
     display: flex;
     justify-content: center;
@@ -94,6 +121,9 @@
     color: black;
     border: none;
     cursor: pointer;
+    opacity: 1;
+    padding: 1px;
+    transition: 0.3s ease-in;
 }
 
 
@@ -101,17 +131,11 @@
     border: none;
     outline-color: transparent;
     font-weight: bold;
-    color: black;
+     color: black;
      background-color: transparent;
      font-size: medium;
-     cursor: pointer;
-   
+     cursor: pointer;   
 }
-
-select #hide-text{
-    display: none;
-}
-
 
 .categories fieldset{
     margin-top: 3rem;

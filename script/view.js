@@ -24,7 +24,7 @@
       <dialog id="delete-option">
       <h3 class="statement">Are you sure you want to delete this item?</h3>
        <div class="buttontab">
-        <button id="cancle">Cancle</button>
+        <button id="cancle">Cancel</button>
         <button data-id="${item.Id}" id="accept">Yes</button>
         </div>
       </dialog>
