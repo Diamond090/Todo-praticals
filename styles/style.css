@@ -31,6 +31,9 @@
     gap: 0;
 
 }
+.header.lists:active{
+    background-color:transparent;
+}
 .header h2{
     width: 100%;
     display: flex;
