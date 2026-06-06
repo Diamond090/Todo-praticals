@@ -54,8 +54,9 @@ function timer(){
     sec=59;
    }
    else if(hr>0){
-     min=59
-     sec=59
+     hr--;
+     min=59;
+
    }
    else{
     alarmFunc();
