@@ -56,6 +56,7 @@ function timer(){
    else if(hr>0){
      hr--;
      min=59;
+     sec=59;
 
    }
    else{
